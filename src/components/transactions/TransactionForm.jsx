@@ -20,11 +20,12 @@ export const TransactionForm = () => {
     <div className="mt-12">
       <form onSubmit={handleSubmit}>
         <input 
-          className="bg-zinc-600 px-3 py-2 rounded-lg block mb-2 w-full"
+          className="bg-zinc-600 px-3 py-2 rounded-lg block  w-full"
           type='text' placeholder="Descripción"
           onChange={(e) => setDescription(e.target.value)}
           value={description}
         />
+        <span className="text-xs ml-1 text-[#fe7c6d]">Gastos expresar con (-)</span>
         <input 
           className="bg-zinc-600 px-3 py-2 rounded-lg block mb-2 w-full"
           type='number' 
